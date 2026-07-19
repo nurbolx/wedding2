@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Жандос &amp; Айгерім</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <video class="hero-video" id="heroVideo" src="assets/petal-hero.mp4" poster="assets/petal-hero-poster.webp" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+      <div class="hero-overlay">
+        <div class="hero-eyebrow">Үйлену тойы</div>
+        <div class="hero-names">
+          <div class="hero-name">Жандос</div>
+          <div class="hero-amp">&amp;</div>
+          <div class="hero-name">Айгерім</div>
+        </div>
+        <div class="hero-date" id="heroDate">23 . 02 . 2027</div>
+      </div>
+    </section>
+
+    <!-- PAINTED PAIR 1: invitation + calendar + location -->
+    <div class="painted">
+      <img class="painted-bg" src="assets/petal-1.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <!-- INVITATION -->
+        <section class="section sec-pad invite">
+          <div class="invite-greeting">Құрметті қонақтар!</div>
+          <div class="invite-body">Сіздерді ұлымыз бен келінімізге арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</div>
+          <div class="invite-date" id="inviteDate">23 Ақпан 2027</div>
+          <div class="cal" id="calendar" aria-hidden="true"></div>
+          <div class="invite-time"><span>Сағат</span> <span id="inviteTime">18:00</span></div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="section loc">
+          <div class="loc-inner">
+            <div class="loc-title">Мекен-жай</div>
+            <div class="loc-sub">Той орны</div>
+          </div>
+          <div class="loc-addr">Мерке қаласы, «Алтын Сарай»</div>
+          <div style="text-align:center">
+            <a class="map-btn" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Картадан ашу</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 2: program / timing -->
+    <div class="painted">
+      <img class="painted-bg" src="assets/petal-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section timing">
+          <div class="loc-inner">
+            <div class="loc-title">Бағдарлама</div>
+            <div class="loc-sub">Той бағдарламасы</div>
+          </div>
+          <div class="timing-rows" id="timingRows">
+            <!-- rows injected by script.js from PROGRAM data -->
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 3: countdown + hosts + RSVP -->
+    <div class="painted">
+      <img class="painted-bg" src="assets/petal-1.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section countdown">
+          <div class="countdown-title">Тойға дейін:</div>
+          <div class="count-grid" aria-live="polite">
+            <div><div class="count-num" id="cdDays">00</div><div class="count-lbl">күн</div></div>
+            <div><div class="count-num" id="cdHours">00</div><div class="count-lbl">сағат</div></div>
+            <div><div class="count-num" id="cdMinutes">00</div><div class="count-lbl">минут</div></div>
+            <div><div class="count-num" id="cdSeconds">00</div><div class="count-lbl">секунд</div></div>
+          </div>
+          <div class="countdown-note">Тойға келуіңізді растауыңызды сұраймыз!</div>
+
+          <div class="hosts">
+            <div class="hosts-label">Той иелері:</div>
+            <div class="hosts-name">Бауыржан &amp; Айнур</div>
+            <div class="hosts-note">Сіздерді тойымызда күтеміз!</div>
+          </div>
+
+          <!-- RSVP -->
+          <div class="rsvp-wrap">
+            <form class="rsvp-form" id="rsvpForm">
+              <div class="rsvp-eyebrow" aria-hidden="true">RSVP</div>
+              <div class="rsvp-title">Анкета</div>
+              <label class="field-label" for="rName">Аты-жөніңіз</label>
+              <input class="rsvp-input" id="rName" name="name" type="text" autocomplete="name" placeholder="Аты-жөніңіз" required>
+
+              <div class="attend-label">Келесіз бе?</div>
+              <div class="attend-list">
+                <label class="attend-opt">
+                  <input type="radio" name="attendance" value="yes" checked>
+                  <span class="attend-box" aria-hidden="true"></span>
+                  <span>Иә, әрине</span>
+                </label>
+                <label class="attend-opt">
+                  <input type="radio" name="attendance" value="pair">
+                  <span class="attend-box" aria-hidden="true"></span>
+                  <span>Жұбайыммен келемін</span>
+                </label>
+                <label class="attend-opt">
+                  <input type="radio" name="attendance" value="no">
+                  <span class="attend-box" aria-hidden="true"></span>
+                  <span>Келе алмаймын</span>
+                </label>
+              </div>
+
+              <div class="note-wrap" id="noteWrap">
+                <label class="field-label" for="rNote">Тілек қалдырыңыз</label>
+                <textarea class="rsvp-note" id="rNote" name="note" placeholder="Жас жұбайларға тілегіңіз..."></textarea>
+              </div>
+
+              <button class="submit-btn" id="rsvpSubmitBtn" type="submit">Жіберу</button>
+            </form>
+            <div class="success-msg" id="successMsg">Рақмет! Жауабыңыз сақталды.</div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- PAINTED PAIR 4: wishes -->
+    <div class="painted">
+      <img class="painted-bg" src="assets/petal-2.webp" alt="" aria-hidden="true" loading="lazy">
+      <div class="painted-veil" aria-hidden="true"></div>
+      <div class="painted-content">
+
+        <section class="section wishes">
+          <div class="wishes-title">Тілектер</div>
+          <div class="wishes-text">Жас жұбайларға тілек қалдырыңыз.</div>
+          <button class="wishes-btn" id="wishesBtn" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <polyline points="3 7 12 13 21 7"></polyline>
+            </svg>
+            <span>Тілек қалдыру</span>
+          </button>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Add your own mp3 to assets/music.mp3 and remove style="display:none" to enable -->
+    <button class="music-btn" id="musicBtn" type="button" aria-label="Music" title="Music" style="display:none">
+      <span class="play" aria-hidden="true"></span>
+    </button>
+    <audio id="audioEl" preload="none"></audio>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

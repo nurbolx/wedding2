@@ -1,0 +1,166 @@
+/* wedding invitation — local copy of purchased "template20" design */
+
+@font-face{font-family:'Asylbek Shelley';font-display:swap;src:url('fonts/asylbek-shelley.woff2') format('woff2');}
+
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-normal-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-normal-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-normal-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-italic-cyrillic-ext.woff2') format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-italic-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 700;font-display:swap;src:url('fonts/cormorant-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/dmmono-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/dmmono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'TildaSans';font-weight:400;font-display:swap;src:url('fonts/TildaSans-Regular.woff2') format('woff2');}
+@font-face{font-family:'TildaSans';font-weight:500;font-display:swap;src:url('fonts/TildaSans-Medium.woff2') format('woff2');}
+@font-face{font-family:'TildaSans';font-weight:600;font-display:swap;src:url('fonts/TildaSans-Semibold.woff2') format('woff2');}
+@font-face{font-family:'TildaSans';font-weight:700;font-display:swap;src:url('fonts/TildaSans-Bold.woff2') format('woff2');}
+
+:root{
+  --bg:#fdf8f3;
+  --paper:rgba(252,244,238,0.45);
+  --paper-base:#fcf4ee;
+  --ink:#3a2a2a;
+  --ink-soft:#5a4242;
+  --ink-mute:#8a7676;
+  --rule:rgba(58,42,42,0.18);
+  --accent:#b89060;
+  --primary:#3a2a2a;
+  --primary-ink:#fcf4ee;
+  --wine:#6e1f2b;
+  --font-display:'Asylbek Shelley','Cormorant Garamond',serif;
+  --font-body:'Cormorant Garamond',Georgia,serif;
+  --font-mono:'DM Mono',monospace;
+  --font-sans:'TildaSans',-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--ink);background:#f1ece2;display:flex;justify-content:center;min-height:100vh;}
+.page{width:100%;max-width:460px;min-height:100vh;background:#fff;position:relative;overflow:hidden;color:var(--ink);
+  box-shadow:0 0 60px rgba(42,37,32,0.18);}
+
+/* ---------------- HERO (petal video) ---------------- */
+.hero{position:relative;width:100%;aspect-ratio:1080/1916;min-height:100dvh;overflow:hidden;background:var(--paper-base);}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  -webkit-mask-image:linear-gradient(180deg,#000 0,#000 72%,transparent 100%);
+  mask-image:linear-gradient(180deg,#000 0,#000 72%,transparent 100%);}
+.hero-overlay{position:absolute;left:0;right:0;top:0;padding:10% 24px 0;text-align:center;z-index:2;}
+.hero-eyebrow{font-family:var(--font-display);font-style:italic;font-size:22px;line-height:1.2;color:rgba(58,42,42,0.78);text-shadow:0 2px 8px rgba(252,244,238,0.85);}
+.hero-names{font-family:var(--font-display);}
+.hero-name{margin-top:16px;font-size:56px;line-height:0.95;color:var(--ink);letter-spacing:0.04em;text-shadow:0 3px 12px rgba(252,244,238,0.85);}
+.hero-amp{font-size:30px;color:rgba(58,42,42,0.4);margin:2px 0;}
+.hero-date{margin-top:14px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.42em;color:var(--ink-soft);text-shadow:0 1px 4px rgba(252,244,238,0.85);}
+
+/* ---------------- PAINTED PAIR (floral bg + paper veil + top/bottom fade) ---------------- */
+.painted{position:relative;overflow:hidden;background:var(--paper-base);}
+.painted-bg,.painted-veil{position:absolute;inset:0;width:100%;height:100%;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 90px,#000 calc(100% - 90px),transparent 100%);
+  mask-image:linear-gradient(180deg,transparent 0,#000 90px,#000 calc(100% - 90px),transparent 100%);}
+.painted-bg{object-fit:cover;z-index:0;}
+.painted-veil{background:var(--paper);z-index:1;pointer-events:none;}
+.painted-content{position:relative;z-index:2;}
+
+.section{position:relative;background:transparent;}
+.sec-pad{padding:56px 28px 40px;}
+
+/* ---------------- INVITATION + CALENDAR ---------------- */
+.invite{text-align:center;}
+.invite-greeting{font-family:var(--font-display);font-size:30px;color:var(--accent);margin-bottom:24px;white-space:pre-line;}
+.invite-body{font-family:var(--font-body);font-size:14.5px;line-height:1.7;color:var(--ink-soft);max-width:320px;margin:0 auto 28px;white-space:pre-line;}
+.invite-date{font-family:var(--font-display);font-size:38px;color:var(--ink);letter-spacing:0.02em;margin-bottom:24px;}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);row-gap:14px;column-gap:6px;font-family:var(--font-body);color:var(--ink-soft);}
+.cal-wd{font-family:var(--font-mono);font-size:11px;letter-spacing:0.18em;text-align:center;color:var(--ink-mute);padding-bottom:8px;border-bottom:1px solid var(--rule);}
+.cal-day{position:relative;text-align:center;font-size:16px;line-height:32px;font-family:var(--font-display);color:var(--ink-soft);}
+.cal-day.is-event{color:var(--accent);}
+.cal-event-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;}
+.cal-event-wrap svg{position:absolute;inset:0;stroke:var(--accent);fill:none;stroke-width:1.4;}
+.cal-event-wrap span{position:relative;}
+.invite-time{margin-top:32px;font-family:var(--font-display);font-size:28px;color:var(--ink);letter-spacing:0.18em;}
+
+/* ---------------- LOCATION ---------------- */
+.loc{padding:48px 24px 40px;}
+.loc-inner{text-align:center;padding:0 24px;}
+.loc-title{font-family:var(--font-display);letter-spacing:0.32em;font-size:26px;color:var(--ink);}
+.loc-sub{font-family:var(--font-body);font-style:italic;font-size:16px;color:var(--ink-mute);margin-top:8px;}
+.loc-addr{margin-top:18px;text-align:center;font-family:var(--font-body);font-size:19px;color:var(--ink-soft);line-height:1.7;white-space:pre-line;}
+.loc-addr .accent-italic{font-style:italic;}
+.map-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;padding:11px 26px;border:1px solid var(--rule);border-radius:999px;
+  background:transparent;color:var(--ink);text-decoration:none;font-family:var(--font-body);font-style:italic;font-size:16px;transition:border-color .15s,background-color .15s;}
+.map-btn:hover{border-color:var(--accent);background:rgba(184,144,96,0.08);}
+
+/* ---------------- PROGRAM / TIMING ---------------- */
+.timing{padding:48px 24px 32px;}
+.timing-rows{margin-top:22px;}
+.timing-row{display:grid;grid-template-columns:64px 28px 1fr;align-items:center;gap:14px;padding:10px 0;position:relative;}
+.timing-icon{width:64px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:50%;
+  border:1px solid color-mix(in srgb,var(--accent) 55%,transparent);background:rgba(255,255,255,0.32);}
+.timing-icon svg{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.timing-mid{position:relative;height:100%;display:flex;justify-content:center;}
+.timing-mid .line{position:absolute;top:0;bottom:0;width:1px;background:var(--rule);}
+.timing-mid .heart{position:relative;align-self:center;}
+.timing-mid .heart svg{display:block;fill:var(--accent);}
+.timing-time{font-family:var(--font-display);font-size:30px;line-height:1;color:var(--ink);}
+.timing-label{font-family:var(--font-body);font-size:13px;color:var(--ink-mute);margin-top:4px;}
+
+/* ---------------- COUNTDOWN + HOSTS ---------------- */
+.countdown{padding:48px 24px 24px;text-align:center;}
+.countdown-title{font-family:var(--font-display);font-size:22px;letter-spacing:0.32em;color:var(--ink);margin-bottom:22px;}
+.count-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;}
+.count-num{font-family:var(--font-display);font-size:44px;line-height:1;color:var(--ink);}
+.count-lbl{font-family:var(--font-body);font-size:12px;color:var(--ink-mute);margin-top:6px;font-style:italic;}
+.countdown-note{margin-top:22px;font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-soft);line-height:1.6;white-space:pre-line;}
+.hosts{text-align:center;margin-top:56px;}
+.hosts-label{font-family:var(--font-display);font-size:30px;letter-spacing:0.18em;color:var(--ink);}
+.hosts-name{font-family:var(--font-display);font-size:30px;letter-spacing:0.18em;color:var(--ink);margin-top:4px;}
+.hosts-note{margin-top:14px;font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-soft);}
+
+/* ---------------- RSVP CARD ---------------- */
+.rsvp-wrap{margin:40px auto 8px;max-width:400px;
+  background:rgba(255,255,255,0.62);
+  border:1px solid color-mix(in srgb,var(--accent) 32%,transparent);border-radius:22px;
+  box-shadow:0 18px 44px -20px color-mix(in srgb,var(--ink) 40%,transparent);padding:34px 26px 30px;}
+.rsvp-form{text-align:left;max-width:330px;margin:0 auto;font-family:var(--font-sans);}
+.rsvp-eyebrow{text-align:center;font-family:var(--font-sans);font-weight:700;font-size:10px;letter-spacing:3.5px;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+.rsvp-title{text-align:center;margin-bottom:24px;font-family:var(--font-display);font-weight:400;font-size:48px;color:var(--accent);line-height:1;}
+.field-label{display:block;font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-mute);margin-bottom:8px;}
+.rsvp-input{width:100%;padding:13px 15px;margin-bottom:2px;border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:rgba(255,255,255,0.7);color:var(--ink);
+  font-family:var(--font-sans);font-weight:500;font-size:15px;outline:none;border-radius:12px;transition:border-color .12s,box-shadow .12s;}
+.rsvp-input::placeholder{color:var(--ink-mute);opacity:0.65;font-weight:400;}
+.rsvp-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent);}
+.attend-label{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink-mute);margin:22px 0 10px;}
+.attend-list{display:flex;flex-direction:column;gap:9px;}
+.attend-opt{display:flex;align-items:center;gap:12px;width:100%;padding:13px 15px;border:1px solid color-mix(in srgb,var(--accent) 26%,transparent);background:rgba(255,255,255,0.5);color:var(--ink);
+  font-family:var(--font-sans);font-weight:500;font-size:15px;border-radius:12px;cursor:pointer;text-align:left;transition:border-color .12s,background-color .12s;}
+.attend-opt:has(input:checked){border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);}
+.attend-opt input{position:absolute;opacity:0;pointer-events:none;}
+.attend-box{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--ink-mute);flex-shrink:0;position:relative;transition:border-color .12s,background-color .12s;}
+.attend-opt:has(input:checked) .attend-box{border-color:var(--accent);background:var(--accent);}
+.attend-box::after{content:'';position:absolute;left:6.5px;top:3px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);opacity:0;transition:opacity .12s;}
+.attend-opt:has(input:checked) .attend-box::after{opacity:1;}
+.note-wrap{margin-top:20px;}
+.rsvp-note{width:100%;min-height:80px;padding:12px 15px;border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:rgba(255,255,255,0.7);color:var(--ink);
+  font-family:var(--font-sans);font-weight:500;font-size:15px;outline:none;resize:none;border-radius:12px;transition:border-color .12s,box-shadow .12s;}
+.rsvp-note::placeholder{color:var(--ink-mute);opacity:0.65;font-weight:400;}
+.rsvp-note:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent);}
+.submit-btn{margin-top:24px;width:100%;padding:15px 0;border:0;border-radius:999px;background:var(--accent);color:#fff;
+  font-family:var(--font-sans);font-weight:700;letter-spacing:2.5px;font-size:12px;text-transform:uppercase;cursor:pointer;transition:filter .12s,transform .12s;}
+.submit-btn:hover{filter:brightness(0.94);transform:translateY(-1px);}
+.success-msg{display:none;text-align:center;padding:18px 6px 0;font-family:var(--font-sans);font-weight:600;font-size:17px;color:var(--accent);}
+
+/* ---------------- WISHES ---------------- */
+.wishes{padding:40px 24px 48px;text-align:center;}
+.wishes-title{font-family:var(--font-display);font-size:26px;letter-spacing:0.18em;color:var(--ink);margin-bottom:12px;}
+.wishes-text{font-family:var(--font-body);font-style:italic;font-size:14px;color:var(--ink-soft);line-height:1.7;max-width:340px;margin:0 auto 18px;white-space:pre-line;}
+.wishes-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--primary);color:var(--primary-ink);border:0;
+  font-family:var(--font-body);font-size:13px;letter-spacing:0.06em;cursor:pointer;}
+
+/* ---------------- MUSIC BUTTON ---------------- */
+.music-btn{position:fixed;right:18px;bottom:18px;z-index:40;width:50px;height:50px;border-radius:50%;border:1px solid var(--rule);cursor:pointer;
+  background:var(--paper-base);box-shadow:0 10px 26px rgba(42,37,32,0.22);display:flex;align-items:center;justify-content:center;}
+.music-btn .play{width:0;height:0;border-style:solid;border-width:7px 0 7px 12px;border-color:transparent transparent transparent var(--accent);margin-left:3px;}
+.music-btn.is-playing .play{width:12px;height:13px;border:none;margin:0;background:linear-gradient(90deg,var(--accent) 0 3.5px,transparent 3.5px 8px,var(--accent) 8px 12px);}
+@media (min-width:481px){.music-btn{right:calc(50% - 212px);}}
